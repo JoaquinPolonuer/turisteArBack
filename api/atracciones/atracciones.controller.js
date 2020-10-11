@@ -4,9 +4,8 @@ const {
   getFeedback,
   pagar,
   getUserByUserEmail
-} = require("./user.service");
-const { genSaltSync, hashSync, compareSync } = require("bcrypt");
-const { sign } = require("jsonwebtoken");
+} = require("./atracciones.service");
+
 module.exports = {
   getFoundationGoals: (req, res) => {
     const id_fundacion = req.params.id_fundacion;

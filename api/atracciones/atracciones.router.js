@@ -2,11 +2,9 @@ const {
   getFoundations,
   getFeedback,
   getFoundationGoals,
-  pagar,
-  login
-} = require("./user.controller");
+  pagar
+} = require("./atracciones.controller");
 const router = require("express").Router();
-const { checkToken } = require("../../auth/token_validation");
 
 router.get("/inicio", getFoundations);
 router.get("/donar/:id_fundacion", getFoundationGoals);
